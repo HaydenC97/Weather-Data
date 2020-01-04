@@ -8,7 +8,6 @@ import csv
 import math
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-import csv
 import sys, os
 
 #wait a moment for everything to finish setting up
@@ -17,9 +16,6 @@ time.sleep(10)
 
 #access google drive spreadsheet
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json',scope)
-client = gspread.authorize(creds)
-sheet = client.open("Weather Data").sheet1
 
 #access sensor
 sensor = bme680.BME680()
@@ -41,8 +37,11 @@ while True:
     try:
         if math.floor(time.time()) % step == 0:
             if sensor.get_sensor_data():
-                #access api
+                #access apis
                 response = requests.get("https://api.darksky.net/forecast/d401ed134bec7085ac821974ffa23b7e/51.724,0.465?units=auto&exclude=minutely,hourly,daily,alerts,flags")
+                creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json',scope)                
+                client = gspread.authorize(creds)
+                sheet = client.open("Weather Data").sheet1
 
                 #chuck api readings into variables
                 api_humidity = response.json()['currently']['humidity']*100
@@ -65,17 +64,17 @@ while True:
                 api_output = "{0:.2f} C,{1:.2f} hPa,{2:.2f} %RH".format(api_temperature, api_pressure, api_humidity)
                 print('API:    ', api_output)
 
-                row = [date_time, api_humidity, sens_humidity, api_pressure, sens_pressure, api_temperature, sens_temperature]
+                newrow = [date_time, api_humidity, sens_humidity, api_pressure, sens_pressure, api_temperature, sens_temperature]
 
                 #backup values in local csv
                 with open('databackup.csv', 'a') as csvfile:
                     writer = csv.writer(csvfile)
-                    writer.writerow(row)
+                    writer.writerow(newrow)
 
-                #add values to google spreadsheet
-                sheet.append_row(row)
+                #add values to Google Sheet every time
+                sheet.append_row(newrow)
 
-                #wait a while until the next reading needs to be taken (5s probably enough)
+                #wait a while until the next reading needs to be taken (not too long, don't want to miss next time)
                 time.sleep(step-30)
 
     except:
