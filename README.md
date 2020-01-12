@@ -4,7 +4,7 @@ This is a project to analyse the accuracy of API weather data when compared to s
 
 <h2>Data Gathering</h2>
 
-The data was gathered using the get_data.py file, which was hosted on a Raspberry Pi. The file uploads the collected data from both the API and the sensor to a Google Sheet and to a backup CSV file (/Data Backups/databackup fit.csv).
+The data was gathered using the 'get_data.py' file, which was hosted on a Raspberry Pi. The file uploads the collected data from both the API and the sensor to a Google Sheet and to a backup CSV file (/Data Backups/databackup fit.csv).
 
 <h2>Data Analysis</h2>
 
