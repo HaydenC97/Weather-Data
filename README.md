@@ -14,3 +14,6 @@ The data is using the 'Data Analysis.ipynb' python notebook. It draws the data f
 
 The exported data is published to a website. Ideally the csv file would be read into the HTML file, but this turned out to be extremeley difficult, so the workaround was to directly copy-paste the csv into the javascript file, to show the data as a chart on a webpage.
 The webpage can be seen here: https://haydenc97.github.io/Weather-Data/.
+
+<h3>Acknowledgements</h3>
+With special thanks to Ben Greenberg whose SIOT project (https://github.com/nebbles/SIOT) was a huge source of inspiration and help to my own project.
