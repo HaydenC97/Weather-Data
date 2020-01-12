@@ -23,7 +23,9 @@ With special thanks to Ben Greenberg whose [SIOT project](https://github.com/neb
 </p>
 <p>
 As well as:
- - [Dark Sky](https://darksky.net/dev/docs)
- - [Google](https://developers.google.com)
- - [High Charts](https://www.highcharts.com)
 </p>
+<ul>
+ <li> [Dark Sky](https://darksky.net/dev/docs) </li>
+ <li> [Google](https://developers.google.com) </li>
+ <li> [High Charts](https://www.highcharts.com) </li>
+</ul>
