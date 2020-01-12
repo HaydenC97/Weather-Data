@@ -13,3 +13,4 @@ The data is using the 'Data Analysis.ipynb' python notebook. It draws the data f
 <h2>Data Publishing</h2>
 
 The exported data is published to a website. Ideally the csv file would be read into the HTML file, but this turned out to be extremeley difficult, so the workaround was to directly copy-paste the csv into the javascript file, to show the data as a chart on a webpage.
+The webpage can be seen here: https://haydenc97.github.io/Weather-Data/.
