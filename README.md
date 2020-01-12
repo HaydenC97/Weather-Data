@@ -18,7 +18,7 @@ The webpage can be seen here: https://haydenc97.github.io/Weather-Data/.
 <h3>References</h3>
 With special thanks to Ben Greenberg whose SIOT project (https://github.com/nebbles/SIOT) was a huge source of inspiration and help to my own project.
 <ul>
-  <li>[Dark Sky]("https://darksky.net/dev/docs")</li>
-  <li>[Google]("https://developers.google.com/")</li>
-  <li>[High Charts]("https://www.highcharts.com/")</li>
+  <li>[Dark Sky](https://darksky.net/dev/docs)</li>
+  <li>[Google](https://developers.google.com)</li>
+  <li>[High Charts](https://www.highcharts.com)</li>
 </ul>
