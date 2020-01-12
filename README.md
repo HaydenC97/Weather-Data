@@ -17,7 +17,7 @@ The data is using the `Data Analysis.ipynb` python notebook. It draws the data f
 The exported data is published to a website. Ideally the csv file would be read into the HTML file, but this turned out to be extremeley difficult, so the workaround was to directly copy-paste the csv into the javascript file, to show the data as a chart on a webpage. The files for the website are all in the `docs/` directory, where the website is also hosted.
 The webpage can be seen here: https://haydenc97.github.io/Weather-Data/.
 
-Future plans for this section are to directly read weather data from the API, and apply the prediction function for that location as worked out in the data analysis file, and display the predicted weather data on top of the original weather data.
+Future plans for this section are to directly read weather data from the API, and apply the prediction function for that location as worked out in the data analysis file, and display the predicted weather data on top of the original weather data, for the selected or current location.
 
 ### References
 
