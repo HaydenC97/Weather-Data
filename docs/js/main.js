@@ -3,7 +3,7 @@ function temperatureGraph(target,data){
 	series2t = [];
 	series3t = [];
 	time = []
-    for(var i=0; i<matrix.length; i++){
+    for(var i=0; i<data.length; i++){
 	    series1t.push(Number(data[i]['Original Temperature']));
 		series2t.push(Number(data[i]['Predicted Temperature']));
 		series3t.push(Number(data[i]['Sensor Temperature']));
@@ -48,7 +48,7 @@ function humidityGraph(target,data){
 	series2h = [];
 	series3h = [];
 	time = []
-    for(var i=0; i<matrix.length; i++){
+    for(var i=0; i<data.length; i++){
 	    series1h.push(Number(data[i]['Original Humidity']));
 		series2h.push(Number(data[i]['Predicted Humidity']));
 		series3h.push(Number(data[i]['Sensor Humidity']));
@@ -94,7 +94,7 @@ function pressureGraph(target,data){
 	series2p = [];
 	series3p = [];
 	time = []
-    for(var i=0; i<matrix.length; i++){
+    for(var i=0; i<data.length; i++){
 	    series1p.push(Number(data[i]['Original Pressure']));
 		series2p.push(Number(data[i]['Predicted Pressure']));
 		series3p.push(Number(data[i]['Sensor Pressure']));
