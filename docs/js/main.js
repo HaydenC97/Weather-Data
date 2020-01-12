@@ -12,7 +12,8 @@ function temperatureGraph(target,data){
 	document.addEventListener('DOMContentLoaded', function () {
 		var myChart = Highcharts.chart(target, {
 			chart: {
-				type: 'line'
+				type: 'line',
+				zoomType: 'x'
 			},
 			title: {
 				text: 'Temperature'
@@ -56,7 +57,8 @@ function humidityGraph(target,data){
 	document.addEventListener('DOMContentLoaded', function () {
 		var myChart = Highcharts.chart(target, {
 			chart: {
-				type: 'line'
+				type: 'line',
+				zoomType: 'x'
 			},
 			title: {
 				text: 'Humidity'
@@ -101,7 +103,8 @@ function pressureGraph(target,data){
 	document.addEventListener('DOMContentLoaded', function () {
 		var myChart = Highcharts.chart(target, {
 			chart: {
-				type: 'line'
+				type: 'line',
+				zoomType: 'x'
 			},
 			title: {
 				text: 'Pressure'
