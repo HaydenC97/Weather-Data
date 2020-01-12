@@ -8,12 +8,17 @@ The data was gathered using the 'get_data.py' file, which was hosted on a Raspbe
 
 <h2>Data Analysis</h2>
 
-The data is using the 'Data Analysis.ipynb' python notebook. It draws the data from both the backup CSVs and the Google Sheet, and generates a prediction function based on the API data, to better predict the sensor data. The results for the whole data gathering time period are then saved in another csv (/Data Backups/Data_Export.csv).
+The data is using the 'Data Analysis.ipynb' python notebook. It draws the data from both the backup CSVs and the Google Sheet, and generates a prediction function based on the API data, to better predict the sensor data. The results for the whole data gathering time period are then saved in another csv (<code>/Data Backups/Data_Export.csv</code>).
 
 <h2>Data Publishing</h2>
 
 The exported data is published to a website. Ideally the csv file would be read into the HTML file, but this turned out to be extremeley difficult, so the workaround was to directly copy-paste the csv into the javascript file, to show the data as a chart on a webpage.
 The webpage can be seen here: https://haydenc97.github.io/Weather-Data/.
 
-<h3>Acknowledgements</h3>
+<h3>References</h3>
 With special thanks to Ben Greenberg whose SIOT project (https://github.com/nebbles/SIOT) was a huge source of inspiration and help to my own project.
+<ul>
+  <li href="url">Dark Sky</li>
+  <li href="url">Google</li>
+  <li href="url">High Charts</li>
+</ul>
