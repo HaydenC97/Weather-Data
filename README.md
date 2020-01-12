@@ -1,6 +1,8 @@
-# Weather-Data
+## Weather-Data
 
-This is a project to analyse the accuracy of API weather data when compared to sensor data, and to generate a function to help improve this accuracy. Included is the data collection code (which was hosted on a Raspberry Pi), and the data analysis code (which is a python notebook).
+<h2>Introduction</h2>
+
+This is a project to analyse the accuracy of API weather data when compared to sensor data, and to generate a prediction function to help improve this accuracy. Included is the data collection code (which was hosted on a Raspberry Pi), and the data analysis code (which is a python notebook), and the code for a user interface in the form of a website.
 
 <h2>Data Gathering</h2>
 
@@ -16,8 +18,12 @@ The exported data is published to a website. Ideally the csv file would be read 
 The webpage can be seen here: https://haydenc97.github.io/Weather-Data/.
 
 <h3>References</h3>
+<p>
 With special thanks to Ben Greenberg whose [SIOT project](https://github.com/nebbles/SIOT) was a huge source of inspiration and help to my own project.
+</p>
+<p>
 As well as:
-[Dark Sky](https://darksky.net/dev/docs)
-[Google](https://developers.google.com)
-[High Charts](https://www.highcharts.com)
+ - [Dark Sky](https://darksky.net/dev/docs)
+ - [Google](https://developers.google.com)
+ - [High Charts](https://www.highcharts.com)
+</p>
