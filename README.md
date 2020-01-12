@@ -8,7 +8,7 @@ The data was gathered using the get_data.py file, which was hosted on a Raspberr
 
 <h2>Data Analysis</h2>
 
-The data is using the 'Data Analysis.ipynb' python notebook. It draws the data from both the backup CSVs and the Google Sheet, and generates a prediction function based on the API data, to better predict the sensor data. The results for the whole data gathering time period are then saved in another csv (/docs/data/Data_Export.csv).
+The data is using the 'Data Analysis.ipynb' python notebook. It draws the data from both the backup CSVs and the Google Sheet, and generates a prediction function based on the API data, to better predict the sensor data. The results for the whole data gathering time period are then saved in another csv (/Data Backups/Data_Export.csv).
 
 <h2>Data Publishing</h2>
 
